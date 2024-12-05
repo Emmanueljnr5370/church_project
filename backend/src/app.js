@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const payment = require("./routes/payment.routes");
 dotenv.config();
 const cors = require('cors');
 const multer = require('multer');
@@ -64,6 +65,7 @@ app.use('/api/church', churchRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/transaction', paymentRoutes);
 app.use('/api/role', roleRoutes);
+app.use("/api/pay", payment);
 
 // Start the server
 const PORT = process.env.PORT || 5000;

@@ -21,6 +21,7 @@
     "flutterwave-node-v3": "^1.1.12",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
     "mocha": "^10.2.0",
     "mongodb": "^6.11.0",
     "mongoose": "^7.8.3",

@@ -13,6 +13,15 @@ const transactionSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref: 'Project'
     },
+    reference : {
+        type: String,
+        required: true,
+        unique: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
     amount: String,
     createdDate: Date,
     type: String,  
